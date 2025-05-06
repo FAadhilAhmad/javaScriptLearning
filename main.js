@@ -12,3 +12,14 @@ function ubahwarna2(){
     elemen3.style.background = "blue";
     elemen4.textContent="selamat menikmati web saya!!!"
 }
+function risetwarna(){
+    const elemen = document.getElementById("teks1");
+    const elemen2 = document.getElementById("parag");
+    const elemen3 = document.getElementById("teks2");
+    const elemen4 = document.getElementById("parag2");
+
+    elemen.style.background = "aqua";
+    elemen2.textContent="Hello World!";
+    elemen3.style.background = "aqua";
+    elemen4.textContent="Hello World!";
+}
