@@ -1,60 +1,98 @@
-* {
+:root {
+    --bg: #f2f2f2;
+    --text: #222;
+    --done: #999;
+    --accent: #4caf50;
+  }
+  
+  body.dark {
+    --bg: #1f1f1f;
+    --text: #fff;
+    --done: #666;
+    --accent: #81c784;
+  }
+  
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: sans-serif;
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Courier New', Courier, monospace;
-}
-
-/* style grid */
-.main-gird {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    margin: 10px;
-    padding: 10px;
+    padding: 2rem;
+  }
+  
+  .container {
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .controls {
+    display: flex;
     gap: 10px;
-    justify-items: center;
-    align-items: center;
-}
-
-.card {
-    background-color: aqua;
-    margin: 10px;
-    padding: 20px;
-    width: 100%;
-    height: 200px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    align-items: center;
-
-}
-.button {
-    margin: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .controls input {
+    flex: 1;
     padding: 10px;
+    font-size: 16px;
+  }
+  
+  .controls button {
+    padding: 10px 15px;
+    background: var(--accent);
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .filters {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 10px;
-    padding: 20px;
-    width: 100%;
-    height: 200px;
-   
-}
-.button button {
-    background-color: chartreuse;
+    gap: 10px;
+    margin-bottom: 1rem;
+  }
+  
+  .filters .filter {
+    padding: 6px 12px;
     border: none;
-    color: black;
-    padding: 20px 40px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .filters .active {
+    background: var(--accent);
+    color: white;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: white;
+    margin-bottom: 5px;
     align-items: center;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
+    border-left: 5px solid var(--accent);
+  }
+  
+  body.dark li {
+    background: #333;
+  }
+  
+  li.done span {
+    text-decoration: line-through;
+    color: var(--done);
+  }
+  
+  .theme-toggle {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
