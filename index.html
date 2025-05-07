@@ -1,31 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart To-Do List</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="main-gird">
-    <div class="card" id="teks1">
-      <h2 id="parag">Hello wolrd!</h2>
+  <div class="container">
+    <h1>Smart To-Do List</h1>
+
+    <div class="controls">
+      <input type="text" id="task-input" placeholder="Tambah tugas..." />
+      <button id="add-task">Tambah</button>
     </div>
-    <div class="card" id="teks2">
-      <h2 id="parag2">Hello wolrd!</h2>
+
+    <div class="filters">
+      <button data-filter="all" class="filter active">Semua</button>
+      <button data-filter="done" class="filter">Selesai</button>
+      <button data-filter="todo" class="filter">Belum</button>
     </div>
-    <div class="card">
-      <h2>Hello wolrd!</h2>
-    </div>
-    <div class="card">
-      <h2>Hello wolrd!</h2>
+
+    <ul id="task-list"></ul>
+
+    <div class="theme-toggle">
+      <label>
+        🌞/🌙
+        <input type="checkbox" id="toggle-theme" />
+      </label>
     </div>
   </div>
-  <div class="button">
-    <button onclick="ubahwarna()">ubahwarna</button>
-    <button onclick="ubahwarna2()">ubahwarna</button>
-    <button onclick="ubahwarna3()">ubahwarna</button>
-  </div>
+
   <script src="main.js"></script>
 </body>
 </html>
