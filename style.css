@@ -1,98 +1,21 @@
-:root {
-    --bg: #f2f2f2;
-    --text: #222;
-    --done: #999;
-    --accent: #4caf50;
-  }
-  
-  body.dark {
-    --bg: #1f1f1f;
-    --text: #fff;
-    --done: #666;
-    --accent: #81c784;
-  }
-  
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: sans-serif;
-    margin: 0;
-    padding: 2rem;
-  }
-  
-  .container {
+body{
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
     max-width: 500px;
-    margin: auto;
-  }
-  
-  h1 {
-    text-align: center;
-  }
-  
-  .controls {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 1rem;
-  }
-  
-  .controls input {
-    flex: 1;
-    padding: 10px;
-    font-size: 16px;
-  }
-  
-  .controls button {
-    padding: 10px 15px;
-    background: var(--accent);
-    border: none;
-    color: white;
-    cursor: pointer;
-  }
-  
-  .filters {
+    margin: 0 auto;
+    padding: 20px;
+}
+.tombol{
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-bottom: 1rem;
-  }
-  
-  .filters .filter {
-    padding: 6px 12px;
     border: none;
-    cursor: pointer;
-  }
-  
-  .filters .active {
-    background: var(--accent);
-    color: white;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  li {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    background: white;
-    margin-bottom: 5px;
-    align-items: center;
-    border-left: 5px solid var(--accent);
-  }
-  
-  body.dark li {
-    background: #333;
-  }
-  
-  li.done span {
-    text-decoration: line-through;
-    color: var(--done);
-  }
-  
-  .theme-toggle {
-    text-align: center;
+    background-color: rgb(125, 249, 125);
+    padding: 20px;
+    border-radius: 10px;
+}
+#output{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
     margin-top: 20px;
-  }
-  
+}
