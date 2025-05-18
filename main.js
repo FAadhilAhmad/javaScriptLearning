@@ -43,3 +43,22 @@ function tampilkanData(){
         output1b.innerText = "";
     }
 }
+
+const outputPercakan = {
+    saya: "fadhil ahmad syawaludin",
+    favorite: "belajar pemrograman",
+    outputPercakan1 : function () {
+        return `Nama saya ${this.saya}, hobi saya adalah ${this.favorite}`
+    }
+}
+let statusOutputPercakan = false;
+function percakapan1 (){
+    const hasilPercakapan = document.getElementById("respon1");
+    statusOutputPercakan = !statusOutputPercakan;
+    if (statusOutputPercakan){
+        hasilPercakapan.innerText = outputPercakan.outputPercakan1();
+    }
+    else{
+        hasilPercakapan.innerText = "";
+    }
+}
