@@ -26,3 +26,25 @@ body{
     border-radius: 10px;
     margin-top: 20px;
 }
+/* percakapan */
+.percakapan{
+    display: flex;
+    flex-direction: column;
+}
+.tombol1{
+    border: none;
+    background-color: rgb(125, 249, 125);
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: auto;
+}
+#respon1{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
