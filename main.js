@@ -62,3 +62,23 @@ function percakapan1 (){
         hasilPercakapan.innerText = "";
     }
 }
+
+const outputPercakapan2 = {
+    aktivitas: "learning javascript",
+    tujuan: "menjadi software engineer",
+    outputTombol2 : function (){
+        return `aktifitas saya adalah ${this.aktivitas} dan tujuan saya adalah ${this.tujuan}`
+    }
+}
+
+let statusOutputPercakapan2 = false;
+function percakapan2 (){
+    const hasilPercakpan2 = document.getElementById("respon2");
+    statusOutputPercakapan2 = !statusOutputPercakapan2;
+    if (statusOutputPercakapan2){
+        hasilPercakpan2.innerText = outputPercakapan2.outputTombol2();
+    }
+    else{
+        hasilPercakpan2.innerText = "";
+    }
+}
