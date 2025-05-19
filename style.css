@@ -48,3 +48,24 @@ body{
     border-radius: 10px;
     margin-top: 20px;
 }
+/* tombol 2 */
+.percakapan2{
+    display: flex;
+    flex-direction: column;
+}
+.tombol2{
+    border: none;
+    background-color: rgb(125, 249, 125);
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: 20px;
+    margin-left: auto;
+}
+#respon2{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
