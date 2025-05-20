@@ -69,3 +69,14 @@ body{
     border-radius: 10px;
     margin-top: 10px;
 }
+/* paragraf */
+.hidden{
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    display: inline-block;
+    vertical-align: top;
+}
+.show{
+    max-height: 100px;
+}
