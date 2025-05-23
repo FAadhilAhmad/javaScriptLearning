@@ -103,3 +103,22 @@ function hilangkan() {
     }
 }
 
+let menghilang2 = false;
+
+function hilangkan2() {
+    const text2 = document.getElementById("bacaSele2")
+    const tombolBtn2 = document.getElementById("tombolBaca2")
+
+    menghilang2 = !menghilang2;
+
+    if (menghilang2) {
+        text2.classList.add('show2');
+        text2.classList.remove('hidden');
+        tombolBtn2.innerText = "males baca bro!!";
+    }
+    else {
+        text2.classList.add('hidden');
+        text2.classList.remove('show2');
+        tombolBtn2.innerText = "Baca semua bro!!";
+    }
+}
