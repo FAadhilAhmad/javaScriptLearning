@@ -80,3 +80,45 @@ body{
 .show{
     max-height: 100px;
 }
+.bacasele{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+.bacasele button{
+    border: none;
+    background-color: rgb(125, 249, 125);
+    max-width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+}
+/* paragraf2 */
+.hidden2{
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    display: inline-block;
+    vertical-align: top;
+}
+.show2{
+    max-height: 100px;
+}
+.bacasele2{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+.bacasele2 button{
+    border: none;
+    background-color: rgb(125, 249, 125);
+    max-width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
