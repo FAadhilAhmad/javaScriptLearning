@@ -122,3 +122,26 @@ body{
     border-radius: 10px;
     margin-top: 10px;
 }
+/* percakapan 3 */
+.percakapan3{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.percakapan3 button{
+    border: none;
+    background-color: rgb(125, 249, 125);
+    padding: 15px;
+    max-width: 30%;
+    border-radius: 10px;
+    margin: 10px;
+}
+.hilang{
+    display: none;
+}
+.muncul1{
+    display: inline-block;
+}
