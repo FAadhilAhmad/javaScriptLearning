@@ -122,3 +122,21 @@ function hilangkan2() {
         tombolBtn2.innerText = "Baca semua bro!!";
     }
 }
+let combination1 = false;
+
+function addBtn() {
+    const btn = document.getElementById('btnCombi')
+    const btn2 = document.getElementById('hilang')
+
+    combination1 = !combination1;
+    console.log("Toggle:", combination1);
+    
+    if (combination1){
+        btn2.classList.add('hilang');
+        btn2.classList.remove('muncul1');
+    }
+    else {
+        btn2.classList.remove('hilang');
+        btn2.classList.add('muncul1');
+    }
+}
