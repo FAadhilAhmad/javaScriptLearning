@@ -140,3 +140,65 @@ function addBtn() {
         btn2.classList.add('muncul1');
     }
 }
+let combination2 = false;
+
+function addBtn2() {
+    const btn2 = document.getElementById('btnCombi2')
+    const btn3 = document.getElementById('hilang2')
+
+    combination2 = !combination2;
+
+    if (combination2){
+        btn3.classList.add('hilang2');
+        btn3.classList.remove('muncul2');
+    }
+    else {
+        btn3.classList.remove('hilang2');
+        btn3.classList.add('muncul2');
+    }
+}
+let nomorCard = 1;
+
+function tambahCard() {
+  const container = document.getElementById('containerCard');
+
+  const card = document.createElement('div');
+  card.classList.add('card');
+
+  card.innerHTML = `
+    <h3>Card ke-${nomorCard}</h3>
+    <p>Ini adalah deskripsi card nomor ${nomorCard}.</p>
+    <button onclick="hapusCard(this)">Hapus</button>
+  `;
+
+  container.appendChild(card);
+  nomorCard++;
+}
+
+function hapusCard(button) {
+  const card = button.parentElement;
+  card.remove();
+}
+
+let nomorCard2 = 0;
+
+function tambahCard2() {
+    const container2 = document.getElementById('containerCard2');
+
+    const card2 = document.createElement('div');
+    card2.classList.add('card2');
+
+    card2.innerHTML = `
+    <h3>Halo Tod ini kard ke ${nomorCard2}</h3>
+    <p>Ini tod card ke ${nomorCard2}</p>
+    <button onclick="hapusCard2(this)">Hapus Todd!!</button>
+    `;
+
+    container2.appendChild(card2);
+    nomorCard2++;
+}
+
+function hapusCard2(button){
+    const card2 = button.parentElement;
+    card2.remove();
+}
