@@ -145,3 +145,79 @@ body{
 .muncul1{
     display: inline-block;
 }
+/* percakapan3 */
+.percakapan4{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    background-color: white;
+    padding:20px;
+    border-radius: 10px;
+}
+.percakapan4 button{
+    border: none;
+    background-color: rgb(125, 249, 125);
+    padding: 15px;
+    max-width: 30%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.hilang2{
+    display: none;
+}
+.muncul2{
+    display: inline-block;
+}
+
+#containerCard {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  padding: 15px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+button {
+  padding: 8px 12px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+#containerCard2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+.card2{
+    background-color: red;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+}
+/* ulangan */
+.ulangan {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+.ulangan button {
+    border: none;
+    background-color: royalblue;
+    max-width: 30%;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
