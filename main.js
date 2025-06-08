@@ -130,8 +130,8 @@ function addBtn() {
 
     combination1 = !combination1;
     console.log("Toggle:", combination1);
-    
-    if (combination1){
+
+    if (combination1) {
         btn2.classList.add('hilang');
         btn2.classList.remove('muncul1');
     }
@@ -148,7 +148,7 @@ function addBtn2() {
 
     combination2 = !combination2;
 
-    if (combination2){
+    if (combination2) {
         btn3.classList.add('hilang2');
         btn3.classList.remove('muncul2');
     }
@@ -160,24 +160,24 @@ function addBtn2() {
 let nomorCard = 1;
 
 function tambahCard() {
-  const container = document.getElementById('containerCard');
+    const container = document.getElementById('containerCard');
 
-  const card = document.createElement('div');
-  card.classList.add('card');
+    const card = document.createElement('div');
+    card.classList.add('card');
 
-  card.innerHTML = `
+    card.innerHTML = `
     <h3>Card ke-${nomorCard}</h3>
     <p>Ini adalah deskripsi card nomor ${nomorCard}.</p>
     <button onclick="hapusCard(this)">Hapus</button>
   `;
 
-  container.appendChild(card);
-  nomorCard++;
+    container.appendChild(card);
+    nomorCard++;
 }
 
 function hapusCard(button) {
-  const card = button.parentElement;
-  card.remove();
+    const card = button.parentElement;
+    card.remove();
 }
 
 let nomorCard2 = 0;
@@ -198,7 +198,47 @@ function tambahCard2() {
     nomorCard2++;
 }
 
-function hapusCard2(button){
+function hapusCard2(button) {
     const card2 = button.parentElement;
     card2.remove();
+}
+
+let sulap = false;
+
+function Tekan() {
+    const hasil1 = document.getElementById('hasil6');
+
+    sulap = !sulap;
+    if (sulap) {
+        hasil1.innerText = "halo broh!!";
+    } else {
+        hasil1.innerText = "asu loh!!";
+    }
+}
+function hapus12() {
+    const hasil1 = document.getElementById('hasil6');
+    hasil1.innerText = "";
+}
+
+let fuck = false;
+
+function plusBtn() {
+    const cukimak = document.getElementById('hasilCard');
+
+    fuck = !fuck;
+    if (fuck) {
+        cukimak.classList.add('hasilWarna');
+    } else {
+        cukimak.classList.remove('hasilWarna');
+    }
+
+
+}
+function hapusA() {
+    const cukimak2 = document.getElementById('hasilCard');
+    if (fuck) {
+        cukimak2.classList.add('tdkHasil');
+    } else {
+        cukimak2.classList.remove('tdkHasil');
+    }
 }
